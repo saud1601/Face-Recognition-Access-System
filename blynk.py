@@ -6,7 +6,6 @@ GPIO.setwarnings(False)
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(20, GPIO.OUT)
-#sn = Blynk('00fc7672fafd447aad3ffe46d3bf89ea', pin= "V1") 
 blynk.notify('Door Online')
 
 @blynk.VIRTUAL_WRITE(1)
