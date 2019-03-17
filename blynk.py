@@ -1,5 +1,4 @@
 import BlynkLib
-
 import RPi.GPIO as GPIO
 
 blynk = BlynkLib.Blynk('c2e97d056d744994b1b8073963dec4be' )
@@ -15,18 +14,14 @@ blynk.notify('Door Online')
 def Door(value):
       
     if int(format(value[0])) == 1:
-        
         GPIO.output(20, 1)
         blynk.notify('Door Unlocked')
 
         
-    else:
-        
-        
+    else:             
         GPIO.output(20, 0)
         blynk.notify('Door Locked')
 
 
-while True:
-    
+while True:    
     blynk.run()
