@@ -57,6 +57,7 @@ while True:
                                         
             else:
                 id = "unknown"
+                blynk.notify('Someone unknown tried to open the door')
 
                                         
             cv2.putText(img, str(id), (x+5,y-5), font, 1, (255,255,255), 2)
