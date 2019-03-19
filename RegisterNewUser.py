@@ -36,6 +36,6 @@ while(True):
     if count >= 1: 
          break
 
-print("\nUser created...Exiting Program")
+print("\nUser created..Exiting Program")
 cam.release()
 cv2.destroyAllWindows()
