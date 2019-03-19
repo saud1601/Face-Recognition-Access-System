@@ -38,7 +38,7 @@ while True:
         for(x,y,w,h) in faces:
             cv2.rectangle(img, (x,y), (x+w,y+h), (0,255,0), 2)
             id, confidence = recognizer.predict(gray[y:y+h,x:x+w])
-            if (confidence < 55):
+            if (confidence > 55):
                 id = names[id]
 
                 GPIO.setmode(GPIO.BCM)
