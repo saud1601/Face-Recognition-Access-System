@@ -15,7 +15,7 @@ while True:
     for (x,y,w,h) in faces:
         cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,0),2)
 
-    cv2.imshow('video',img)
+    cv2.imshow('Detection',img)
     k = cv2.waitKey(0)
     if k == 27:
         break
