@@ -12,8 +12,7 @@ users = ['Rafed', 'Saud']
 face_id = len(users)
 
 print ('\nYour ID is :' +str(face_id))
-        
-    
+            
 print("\n Initializing face capture. Look the camera and wait ... (Press Ctrl+C to exit)")
 
 count = 0
